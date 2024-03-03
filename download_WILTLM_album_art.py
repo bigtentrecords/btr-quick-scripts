@@ -76,7 +76,7 @@ def main(args):
     tracks = get_playlist_tracks(sc, playlist_id)
     for i, trk in enumerate(tracks):
         download_album_art(trk, dl_folder_path)
-        print(f"Downloaded {i} of {len(tracks)} covers")
+        print(f"Downloaded {i+1} of {len(tracks)} covers")
 
 
 if __name__ == "__main__":
