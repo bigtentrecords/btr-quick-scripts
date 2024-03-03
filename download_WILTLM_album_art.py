@@ -10,7 +10,7 @@ from spotipy.client import Spotify as SpotifyClient
 from spotipy.oauth2 import SpotifyOAuth
 
 
-DL_FOLDER_PATH_ROOT = "/Users/nickdemasi/Mirror/Big Tent/Projects/Series/WILTLM"
+DL_FOLDER_PATH_ROOT = "/Users/nickdemasi/Mirror/Big_Tent/Projects/Series/WILTLM"
 WILTTM_PLAYLIST_ID: str = "4xjL4vPqFFTb9hEtxbbirJ"
 
 
@@ -61,7 +61,7 @@ def main(args):
     # Create the directory if needed
     if not os.path.exists(dl_folder_path):
         os.makedirs(dl_folder_path)
-        os.makedirs(f"{dl_folder_path}/covers")
+    os.makedirs(f"{dl_folder_path}/covers")
 
     # doublecheck destination folder with user
     print(f"Writing alubm art to {dl_folder_path}")
