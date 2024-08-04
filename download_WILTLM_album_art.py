@@ -60,7 +60,7 @@ def main(args):
 
     # connect to api
     scope = "user-library-read"
-    sc = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
     # prepare download folder
     dl_folder_path = format_dl_folder_path(month)
@@ -82,7 +82,7 @@ def main(args):
         return
 
     # download album art
-    tracks = get_playlist_tracks(sc, playlist_id)
+    tracks = get_playlist_tracks(sp, playlist_id)
     for i, trk in enumerate(tracks):
         download_album_art(trk, dl_folder_path)
         print(f"Downloaded {i+1} of {len(tracks)} covers")
