@@ -113,7 +113,7 @@ def main():
         )
         for p in discovered_on_playlists:
             if p in playlists:
-                playlists[p]["featured_artists"].append(a)
+                playlists[p]["featured_artists"].append(aname)
                 playlists[p]["featured_artist_count"] += 1
             else:
                 playlist_metadata = get_playlist_metadata(sp, p)

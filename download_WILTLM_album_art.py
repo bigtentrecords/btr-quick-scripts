@@ -11,7 +11,7 @@ from spotipy.client import Spotify as SpotifyClient
 from spotipy.oauth2 import SpotifyOAuth
 
 
-DL_FOLDER_PATH_ROOT = "/Users/nickdemasi/Mirror/Big_Tent/Projects/Series/WILTLM"
+DL_FOLDER_PATH_ROOT = "/Users/nickdemasi/Mirror/Big_Tent/WILTLM"
 WILTTM_PLAYLIST_ID: str = "4xjL4vPqFFTb9hEtxbbirJ"
 
 
